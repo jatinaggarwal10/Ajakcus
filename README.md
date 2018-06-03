@@ -15,7 +15,8 @@
     - Set Node Home variable Enviromental variable path
       - NODE_HOME- C:\Program Files\nodejs
       - PATH - C:\Program Files\nodejs\node_modules\npm\bin
-  *Downlaod Appium Server from node
+      
+  * Downlaod Appium Server from node
    - Open Command Prompt anf give command- install npm -g appium. Once it is done just type appium. 
    
    * Confiure Appium Client jars- Java client -6.0.0 [Downlaod appium jars](https://search.maven.org/#search%7Cgav%7C1%7Cg%3A%22io.appium%22%20AND%20a%3A%22java-client%22)
@@ -33,14 +34,14 @@
     -  Select Help / Install New Software in Eclipse 
     -  Enter the update site URL in "Work with:" field:
     - Update site for release: http://beust.com/eclipse.
-      - Or, Update site for beta: http://beust.org/eclipse-beta , use it if you want to experiment with the new features or verify the bug fixes, and please report back if you encounter any issues.
+     
     - Make sure the check box next to URL is checked and click Next.
     - Eclipse will then guide you through the process.
   
 # Prerequisites before running the Script
   * Open the appium server just by giving appium command on command prompt 
   * Now check the port number to  make the connection with Appium server
-   - And replace the port number in the script in the given command. Only the value wjich waould vary is your port number i.e .4723
+   - And replace the port number in the script in the given command. Only the value which would vary is your port number i.e .4723
      - AndroidDriver<AndroidElement> driver=new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
   * Real devce shoul be connected to your system before ruuning the script. And then check your real device OS version.
     -You can do that just run the script for the very first time in Eclipse and check its error logs. Logs tell you what device is available and what OS version is required. 
